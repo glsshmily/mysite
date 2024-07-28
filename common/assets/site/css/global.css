@@ -1,0 +1,610 @@
+body {
+  background: #132831 !important; transition: background .3s ease
+}
+header {
+  border-top-color: #e6302e; border-bottom: transparent; background: rgba(30, 60, 120, .3); z-index: 1800
+}
+header box logo {
+  height: 62px
+}
+header box logo div.logo {
+  width: 100px; height: 62px; background: url(../goodship.svg); background-size: 100px 145px; background-position: 0px -44px
+}
+header box mainmenu {
+  flex: none
+}
+header box mainmenu ul li {
+  padding: 0px calc(var(--page-gap) * 3)
+}
+header box mainmenu ul li a {
+  display: block; height: auto; font-weight: normal
+}
+header box mainmenu ul li a span {
+  display: block; text-align: center; line-height: 160%; font-size: 1.6rem; color: #fff
+}
+header box mainmenu ul li a em {
+  display: block; font-style: normal; text-align: center; line-height: 160%; font-size: 1.2rem; color: #eee; transition: color .3s ease
+}
+header box mainmenu ul li a:hover em {
+  color: #fff
+}
+header box mainmenu ul li a::before,
+header box mainmenu ul li a::after {
+  bottom: -29px; background: #fff
+}
+header box mainmenu ul li a:hover::before,
+header box mainmenu ul li a:hover::after {
+  background: #fff !important
+}
+header box mainmenu ul li.on a::before,
+header box mainmenu ul li.on a::after {
+  background: #e6302e !important
+}
+header.sticky {
+  background: #fff !important; box-shadow: 0px 4px 4px rgb(0 0 0 / 10%) !important
+}
+header.sticky box mainmenu ul li a span {
+  color: #132831
+}
+header.sticky box mainmenu ul li a em {
+  color: #aaa
+}
+header.sticky box mainmenu ul li a:hover em {
+  color: #132831
+}
+header.sticky box mainmenu ul li a::before,
+header.sticky box mainmenu ul li a::after {
+  background: #132831 !important
+}
+header.sticky box mainmenu ul li a:hover::before,
+header.sticky box mainmenu ul li a:hover::after {
+  background: #132831 !important
+}
+header.sticky box mainmenu ul li.on a::before,
+header.sticky box mainmenu ul li.on a::after {
+  background: #e6302e !important
+}
+navigation {
+  background-color: #f1f1f1
+}
+container {
+  background: #f1f1f1
+}
+footer {
+  position: relative; z-index: 1000
+}
+footer bottom {
+  background: #132831 !important
+}
+footer bottom box section {
+  width: 33.33%
+}
+footer copyright {
+  border-top: #743938 2px dashed
+}
+footer div.card {
+  width: 100%; box-sizing: border-box; padding: var(--page-gap); background: #e6302e; transform: translate(0, calc(0px - var(--page-gap) * 2))
+}
+footer div.card h3 {
+  padding: calc(var(--page-gap) * 2) 0px var(--page-gap) 0px; font-size: 3rem; color: #fff; font-weight: normal; display: flex; align-items: center; justify-content: center
+}
+footer div.card h3 i {
+  display: inline-block; width: 20px; height: 20px; margin: 0px 5px; background: url(../images/heptagram.png) center center no-repeat; background-size: contain
+}
+footer div.card h4 {
+  font-size: 2.4rem; color: #fff; font-weight: normal; text-align: center
+}
+footer div.card h5 {
+  font-size: 1.4rem; color: #fff; font-weight: normal; text-align: center; padding-top: calc(var(--page-gap) * 6); padding-bottom: calc(var(--page-gap) / 2)
+}
+footer div.card h5 span {
+  display: inline-block; position: relative; z-index: 10
+}
+footer div.card h5 span::before {
+  content: ''; width: 30px; height: 1px; background: #fff; position: absolute; top: 50%; right: calc(100% + 10px); z-index: 100
+}
+footer div.card h5 span::after {
+  content: ''; width: 30px; height: 1px; background: #fff; position: absolute; top: 50%; left: calc(100% + 10px); z-index: 100
+}
+footer div.card h6 {
+  font-size: 1.2rem; color: #aaa; font-weight: normal; text-align: center
+}
+footer div.intro {
+  width: 100%; box-sizing: border-box; padding: var(--page-gap); padding-bottom: 0px
+}
+footer div.intro h3 {
+  font-size: 1.4rem; color: #a2afb6; font-weight: normal; line-height: 160%; padding: 0px
+}
+footer div.intro h4 {
+  font-size: 2.4rem; color: #fff; font-weight: normal; padding: calc(var(--page-gap) / 2) 0px var(--page-gap) 0px; position: relative
+}
+footer div.intro h4::after {
+  content: ''; width: 10%; background: #e6302e; height: 4px; border-right: #743938 20px solid; position: absolute; left: 0px; bottom: -4px; z-index: 100
+}
+footer div.intro h4.links {
+  font-size: 1.6rem; padding: var(--page-gap) 0px calc(var(--page-gap) / 2) 0px
+}
+footer div.intro h4.links::after {
+  height: 2px
+}
+footer div.intro p {
+  padding-top: var(--page-gap); line-height: 160%; font-size: 1.4rem; color: #fff
+}
+footer div.intro p.en {
+  padding-top: calc(var(--page-gap) / 2); font-size: 1.2rem; color: #aaa
+}
+footer div.intro p.links {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 10px
+}
+footer div.intro p.links a {
+  display: block; line-height: 140%; color: #aaa; border-bottom: #aaa 1px solid
+}
+footer div.intro p.links a:hover {
+  text-decoration: none; color: #fff; border-bottom: #fff 1px solid
+}
+footer div.contact {
+  width: 100%; padding-top: var(--page-gap)
+}
+footer div.contact div.phone {
+  padding-bottom: calc(var(--page-gap) * 1.5); padding-left: 80px; position: relative
+}
+footer div.contact div.phone::after {
+  content: ''; display: block; width: 60px; height: 60px; background: url(../images/icon.phone.svg) rgba(255, 255, 255, .1) center center no-repeat; background-size: 30px 30px; position: absolute; top: 0px; left: 0px; z-index: 100
+}
+footer div.contact div.phone p {
+  padding-bottom: calc(var(--page-gap) / 2)
+}
+footer div.contact div.phone p a {
+  font-size: 2rem; line-height: 120%
+}
+footer div.contact div.phone p a:hover {
+  text-decoration: none
+}
+footer div.contact div.email {
+  padding-bottom: calc(var(--page-gap) * 1.5); padding-left: 80px; position: relative
+}
+footer div.contact div.email::after {
+  content: ''; display: block; width: 60px; height: 60px; background: url(../images/icon.mail.svg) rgba(255, 255, 255, .1) center center no-repeat; background-size: 30px 30px; position: absolute; top: 0px; left: 0px; z-index: 100
+}
+footer div.contact div.email p {
+  padding-bottom: calc(var(--page-gap) / 2)
+}
+footer div.contact div.email p a {
+  font-size: 1.6rem; line-height: 140%
+}
+footer div.contact div.email p a:hover {
+  text-decoration: none
+}
+footer div.contact div.address {
+  padding-left: 80px; position: relative
+}
+footer div.contact div.address::after {
+  content: ''; display: block; width: 60px; height: 60px; background: url(../images/icon.address.svg) rgba(255, 255, 255, .1) center center no-repeat; background-size: 30px 30px; position: absolute; top: 0px; left: 0px; z-index: 100
+}
+footer div.contact div.address p {
+  padding-bottom: calc(var(--page-gap) / 2); font-size: 1.4rem; line-height: 140%
+}
+footer div.contact div.address p.en {
+  font-size: 1.2rem; color: #aaa
+}
+headlines {
+  display: flex; width: 100%; height: calc(100vh / 2); min-height: 300px; max-height: 600px; background: none center center no-repeat; background-size: cover; align-items: center; justify-content: center; position: relative
+}
+headlines span {
+  display: block; padding: var(--page-gap); padding-right: calc(var(--page-gap) - 4px); transform: translate(0, 50px); font-size: 2rem; line-height: 100%; color: #fff; letter-spacing: 4px; position: relative; z-index: 200
+}
+headlines.aboutus {
+  background-image: url(../images/headlines.aboutus.jpg)
+}
+headlines.service {
+  background-image: url(../images/headlines.service.jpg)
+}
+headlines.recruitment {
+  background-image: url(../images/headlines.recruitment.jpg)
+}
+headlines.contactus {
+  background-image: url(../images/headlines.contactus.jpg)
+}
+headlines::after {
+  content: ''; width: 100%; height: 100%; background: url(../images/mask.png) rgba(30, 60, 120, .5) top center; position: absolute; top: 0px; left: 0px; z-index: 100
+}
+.goodship_aboutus {
+  width: 100%; display: flex; flex-wrap: wrap; border-top: #e6302e 2px solid
+}
+.goodship_aboutus div.left {
+  width: 50%; background: #f1f1f1; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center
+}
+.goodship_aboutus div.left div.content {
+  width: calc(50vw - var(--page-gap)); max-width: calc(var(--page-max-width) / 2 - var(--page-gap)); box-sizing: border-box; padding: calc(var(--page-gap) * 2); padding-left: 0px
+}
+.goodship_aboutus div.left div.content h2 {
+  font-size: 2rem; font-weight: normal; color: #999; padding-bottom: var(--page-gap)
+}
+.goodship_aboutus div.left div.content h3 {
+  font-size: 3rem; font-weight: normal; color: #132831; margin-bottom: calc(var(--page-gap) * 1.5); line-height: 140%; padding-bottom: calc(var(--page-gap) * 1.2); position: relative
+}
+.goodship_aboutus div.left div.content h3::after {
+  content: ''; width: 10%; background: #e6302e; height: 4px; border-right: #f19981 20px solid; position: absolute; left: 0px; bottom: -4px; z-index: 100
+}
+.goodship_aboutus div.left div.content h4 {
+  font-size: 2.4rem; font-weight: normal; padding-top: var(--page-gap); color: #e6302e; line-height: 140%
+}
+.goodship_aboutus div.left div.content h5 {
+  font-size: 1.4rem; font-weight: normal; padding-top: var(--page-gap); color: #999
+}
+.goodship_aboutus div.left div.content p {
+  font-size: 1.6rem; line-height: 160%; color: #737373
+}
+.goodship_aboutus div.left div.content p.en {
+  padding-top: var(--page-gap); font-size: 1.4rem
+}
+.goodship_aboutus div.left div.content ul {
+  padding-top: calc(var(--page-gap) * 2)
+}
+.goodship_aboutus div.left div.content ul li {
+  background: url(../images/selected.svg) 0px 0px no-repeat; background-size: 40px 40px; padding-left: 60px; padding-bottom: var(--page-gap)
+}
+.goodship_aboutus div.left div.content ul li span {
+  display: block; font-size: 1.6rem; line-height: 160%
+}
+.goodship_aboutus div.left div.content ul li em {
+  display: block; font-style: normal; font-size: 1.2rem; line-height: 160%; color: #737373
+}
+.goodship_aboutus div.right {
+  width: 50%; background: url(../images/bg.1.jpg) center center no-repeat; background-size: cover; position: relative
+}
+.goodship_aboutus div.right div.mask {
+  width: 100%; height: 100%; background: rgba(30, 60, 120, .95)
+}
+.goodship_aboutus div.right div.content {
+  width: calc(50vw - var(--page-gap)); max-width: calc(var(--page-max-width) / 2 - var(--page-gap)); box-sizing: border-box; padding: calc(var(--page-gap) * 2); padding-right: 0px; transform: translate(0, -50%); position: absolute; top: 50%; left: 0px; z-index: 100
+}
+.goodship_aboutus div.right div.content div.item {
+  display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: var(--page-gap)
+}
+.goodship_aboutus div.right div.content div.item span.icon {
+  display: block; width: 12.5%
+}
+.goodship_aboutus div.right div.content div.item span.icon img {
+  width: 100%
+}
+.goodship_aboutus div.right div.content div.item span.text {
+  display: block; width: 85%; font-size: 1.4rem; line-height: 160%; color: #fff
+}
+.goodship_aboutus div.right div.content div.item span.text span {
+  display: block
+}
+.goodship_aboutus div.right div.content div.item span.text em {
+  display: block; font-style: normal; font-size: 1.2rem; padding-top: calc(var(--page-gap) / 2); color: #999
+}
+.goodship_advantages {
+  width: 100%; background: #fff; border-top: #e6302e 2px solid
+}
+.goodship_advantages div.content {
+  width: 100%; box-sizing: border-box; max-width: var(--page-max-width); margin: auto; padding: calc(var(--page-gap) * 2) var(--page-gap)
+}
+.goodship_advantages div.content h2 {
+  font-size: 2rem; font-weight: normal; color: #999; padding-bottom: var(--page-gap)
+}
+.goodship_advantages div.content h3 {
+  font-size: 3rem; font-weight: normal; color: #132831; margin-bottom: calc(var(--page-gap) * 1.5); line-height: 140%; padding-bottom: calc(var(--page-gap) * 1.2); position: relative
+}
+.goodship_advantages div.content h3::after {
+  content: ''; width: 5%; background: #e6302e; height: 4px; border-right: #f19981 20px solid; position: absolute; left: 0px; bottom: -4px; z-index: 100
+}
+.goodship_advantages div.content p {
+  font-size: 1.6rem; line-height: 160%; color: #737373
+}
+.goodship_advantages div.content p.en {
+  padding-top: calc(var(--page-gap) / 2); font-size: 1.2rem
+}
+.goodship_service {
+  width: 100%; display: flex; flex-wrap: wrap
+}
+.goodship_service div.left {
+  width: 50%; background: #132831; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center
+}
+.goodship_service div.left div.content {
+  width: calc(50vw - var(--page-gap)); max-width: calc(var(--page-max-width) / 2 - var(--page-gap)); box-sizing: border-box; padding: calc(var(--page-gap) * 2); padding-left: 0px
+}
+.goodship_service div.left div.content h3 {
+  font-size: 2.4rem; font-weight: normal; color: #fff
+}
+.goodship_service div.left div.content p.en {
+  padding: calc(var(--page-gap) / 2) 0px calc(var(--page-gap) * 2) 0px; font-size: 1.2rem; line-height: 160%; color: #999
+}
+.goodship_service div.left div.content div.item {
+  display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: var(--page-gap)
+}
+.goodship_service div.left div.content div.item div.block {
+  width: 90px; height: 90px; background: #e6302e; display: flex; align-items: center; justify-content: center; flex-wrap: wrap
+}
+.goodship_service div.left div.content div.item div.block span {
+  font-size: 2rem; color: #fff; line-height: 140%; text-align: center
+}
+.goodship_service div.left div.content div.item div.block span em {
+  font-size: 1.4rem; font-style: normal
+}
+.goodship_service div.left div.content div.item div.text {
+  width: calc(100% - 110px); font-size: 1.4rem; line-height: 160%; color: #fff
+}
+.goodship_service div.left div.content div.item div.text p.en {
+  font-size: 1.2rem; padding-top: calc(var(--page-gap) / 2); color: #999
+}
+.goodship_service div.right {
+  width: 50%; background: #f1f1f1; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center
+}
+.goodship_service div.right div.content {
+  width: calc(50vw - var(--page-gap)); max-width: calc(var(--page-max-width) / 2 - var(--page-gap)); box-sizing: border-box; padding: calc(var(--page-gap) * 2); padding-right: 0px
+}
+.goodship_service div.right div.content h4 {
+  font-size: 2.4rem; font-weight: normal; padding-top: calc(var(--page-gap) * 2); color: #e6302e
+}
+.goodship_service div.right div.content h5 {
+  font-size: 1.4rem; font-weight: normal; padding-top: var(--page-gap); color: #999
+}
+.goodship_service div.right div.content p {
+  font-size: 1.4rem; line-height: 160%; color: #737373
+}
+.goodship_service div.right div.content p.en {
+  font-size: 1.2rem; color: #999; padding-top: calc(var(--page-gap) / 2)
+}
+.goodship_service div.right div.content div.map {
+  width: 100%; padding-bottom: var(--page-gap)
+}
+.goodship_service div.right div.content div.map img {
+  width: 100%; display: block
+}
+.goodship_numbers {
+  width: 100%; background: #f1f1f1; padding: var(--page-gap) 0px; border-top: #e6302e 2px solid
+}
+.goodship_numbers div.box {
+  width: 100%; box-sizing: border-box; max-width: var(--page-max-width); margin: auto; padding: var(--page-inner-padding); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around
+}
+.goodship_numbers div.box div.item {
+  width: 20%; padding: var(--page-gap) 0px
+}
+.goodship_numbers div.box div.item div.icon {
+  width: 50px; height: 50px; margin: auto; padding: calc(var(--page-gap) * 2); border: #aaa 1px solid; border-radius: 100%
+}
+.goodship_numbers div.box div.item div.icon jtbc-svg {
+  width: 50px; height: 50px; display: block; --fore-color: #e6302e
+}
+.goodship_numbers div.box div.item div.count {
+  padding: var(--page-gap) 0px; font-size: 3rem; text-align: center; color: #333
+}
+.goodship_numbers div.box div.item div.count em {
+  font-size: 1.4rem; color: #aaa; font-style: normal; padding-left: calc(var(--page-gap) / 2)
+}
+.goodship_numbers div.box div.item div.text {
+  font-size: 1.6rem; color: #666; text-align: center
+}
+.goodship_goal {
+  width: 100%; height: 20vw; min-height: 300px; max-height: 400px; background: url(../images/bg.goal.jpg) center center no-repeat; background-size: cover; display: flex; align-items: center; justify-content: center; position: relative; z-index: 100
+}
+.goodship_goal div.mask {
+  width: 100%; height: 100%; background: rgba(30, 60, 120, .6); position: absolute; top: 0px; left: 0px; z-index: 100
+}
+.goodship_goal div.box {
+  width: 100%; box-sizing: border-box; max-width: var(--page-max-width); margin: auto; padding: var(--page-inner-padding); display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 200
+}
+.goodship_goal div.box div.goal {
+  font-size: 2rem; color: #fff; padding-left: var(--page-gap)
+}
+.goodship_goal div.box div.goal span {
+  display: block; line-height: 160%
+}
+.goodship_goal div.box div.goal em {
+  display: block; font-style: normal; padding-left: calc(var(--page-gap) * 2); line-height: 200%; font-size: 4.8rem
+}
+.goodship_goal div.box div.goal em.en {
+  font-size: 1.6rem
+}
+.goodship_recruitment_list {
+  width: 100%; padding-bottom: calc(var(--page-gap) * 2)
+}
+.goodship_recruitment_list div.positions {
+  width: 100%
+}
+.goodship_recruitment_list div.positions h3 {
+  font-size: 2.4rem; text-align: center; font-weight: normal; line-height: 160%
+}
+.goodship_recruitment_list div.positions h4 {
+  font-size: 1.4rem; color: #737373; text-align: center; padding-bottom: calc(var(--page-gap) * 1); font-weight: normal; line-height: 160%
+}
+.goodship_recruitment_list div.positions div.item {
+  width: 100%; margin-bottom: var(--page-gap); background: #132831; box-sizing: border-box; padding: calc(var(--page-gap) * 2); color: #fff
+}
+.goodship_recruitment_list div.positions div.item p.title {
+  font-size: 2.4rem; line-height: 160%
+}
+.goodship_recruitment_list div.positions div.item p.button a {
+  display: inline-block; padding: 10px 20px; background: #e6302e; font-size: 1.4rem; line-height: 120%; color: #fff; border-radius: 5px; font-weight: bold; transition: all .3s ease
+}
+.goodship_recruitment_list div.positions div.item p.button a:hover {
+  background-color: #fff; color: #e6302e
+}
+.goodship_contactus_detail {
+  width: 100%; box-sizing: border-box; margin-bottom: calc(var(--page-gap) * 2)
+}
+.goodship_contactus_detail div.title {
+  width: 100%; background: #132831; box-sizing: border-box; padding: var(--page-gap); color: #fff
+}
+.goodship_contactus_detail div.title h1 {
+  font-size: 2.4rem; font-weight: normal; line-height: 160%
+}
+.goodship_contactus_detail div.title h2 {
+  font-size: 1.4rem; font-weight: normal; line-height: 160%; color: #aaa
+}
+.goodship_contactus_detail div.map {
+  width: 100%; background: #fff; box-sizing: border-box
+}
+.goodship_contactus_detail div.box {
+  width: 100%; background: #fff; box-sizing: border-box; padding: calc(var(--page-gap) * 2); color: #132831
+}
+.goodship_contactus_detail div.box a {
+  color: #132831
+}
+.goodship_contactus_detail div.contact div.phone {
+  padding-bottom: var(--page-gap); padding-left: 80px; position: relative
+}
+.goodship_contactus_detail div.contact div.phone::after {
+  content: ''; display: block; width: 60px; height: 60px; background: url(../images/icon.phone.dark.svg) rgba(19, 40, 49, .1) center center no-repeat; background-size: 30px 30px; position: absolute; top: 0px; left: 0px; z-index: 100
+}
+.goodship_contactus_detail div.contact div.phone p {
+  padding-bottom: calc(var(--page-gap) / 2)
+}
+.goodship_contactus_detail div.contact div.phone p a {
+  font-size: 2rem; line-height: 120%
+}
+.goodship_contactus_detail div.contact div.phone p a:hover {
+  text-decoration: none
+}
+.goodship_contactus_detail div.contact div.email {
+  padding-bottom: var(--page-gap); padding-left: 80px; position: relative
+}
+.goodship_contactus_detail div.contact div.email::after {
+  content: ''; display: block; width: 60px; height: 60px; background: url(../images/icon.mail.dark.svg) rgba(19, 40, 49, .1) center center no-repeat; background-size: 30px 30px; position: absolute; top: 0px; left: 0px; z-index: 100
+}
+.goodship_contactus_detail div.contact div.email p {
+  padding-bottom: calc(var(--page-gap) / 2)
+}
+.goodship_contactus_detail div.contact div.email p a {
+  font-size: 1.6rem; line-height: 140%
+}
+.goodship_contactus_detail div.contact div.email p a:hover {
+  text-decoration: none
+}
+.goodship_contactus_detail div.contact div.address {
+  padding-left: 80px; position: relative
+}
+.goodship_contactus_detail div.contact div.address::after {
+  content: ''; display: block; width: 60px; height: 60px; background: url(../images/icon.address.dark.svg) rgba(19, 40, 49, .1) center center no-repeat; background-size: 30px 30px; position: absolute; top: 0px; left: 0px; z-index: 100
+}
+.goodship_contactus_detail div.contact div.address p {
+  padding-bottom: calc(var(--page-gap) / 2); font-size: 1.4rem; line-height: 140%
+}
+.goodship_contactus_detail div.contact div.address p.en {
+  font-size: 1.2rem; color: #aaa
+}
+@media screen and (max-width: 1280px) {
+  header box mainmenu ul li {
+    padding: 0px calc(var(--page-gap) * 2)
+  }
+  footer bottom box section {
+    width: 50%
+  }
+  footer bottom box section:nth-child(1) {
+    display: none
+  }
+  footer div.intro {
+    padding: 0px
+  }
+}
+@media screen and (max-width: 960px) {
+  header box navicon span,
+  header box navicon span::before,
+  header box navicon span::after {
+    background: #f1f1f1
+  }
+  header box navicon.on span {
+    background: transparent !important
+  }
+  header box mainmenu {
+    background: rgba(255, 255, 255, .95)
+  }
+  header box mainmenu ul li {
+    padding: var(--page-gap) 0px
+  }
+  header box mainmenu ul li a {
+    display: inline-block; color: #132831 !important
+  }
+  header box mainmenu ul li a span {
+    color: #132831 !important
+  }
+  header box mainmenu ul li a em {
+    color: #aaa !important
+  }
+  header box mainmenu ul li a::before,
+  header box mainmenu ul li a::after {
+    bottom: -6px
+  }
+  header.on {
+    background: rgba(255, 255, 255, .95) !important; box-shadow: none !important; border-bottom: #ccc 1px solid !important
+  }
+  header.on box navicon span,
+  header.on box navicon span::before,
+  header.on box navicon span::after {
+    background: #132831
+  }
+  header.sticky box navicon span,
+  header.sticky box navicon span::before,
+  header.sticky box navicon span::after {
+    background: #132831
+  }
+  headlines span {
+    font-size: 1.8rem
+  }
+  .goodship_aboutus div.left,
+  .goodship_aboutus div.right {
+    width: 100%; display: block; box-sizing: border-box; padding: var(--page-outer-padding)
+  }
+  .goodship_aboutus div.left div.content {
+    width: 100%; max-width: 100%; padding: calc(var(--page-gap) * 2) 0px
+  }
+  .goodship_aboutus div.left div.content h3 {
+    font-size: 2.4rem
+  }
+  .goodship_aboutus div.left div.content h4 {
+    font-size: 2rem
+  }
+  .goodship_aboutus div.right div.mask {
+    position: absolute; top: 0px; left: 0px; z-index: 100
+  }
+  .goodship_aboutus div.right div.content {
+    width: 100%; max-width: 100%; padding: calc(var(--page-gap) * 2) 0px; position: relative; z-index: 200
+  }
+  .goodship_advantages div.content h2 {
+    font-size: 1.6rem
+  }
+  .goodship_advantages div.content h3 {
+    font-size: 2.4rem
+  }
+  .goodship_service div.left,
+  .goodship_service div.right {
+    width: 100%; display: block; box-sizing: border-box; padding: var(--page-outer-padding)
+  }
+  .goodship_service div.left div.content {
+    width: 100%; max-width: 100%; padding: calc(var(--page-gap) * 2) 0px
+  }
+  .goodship_service div.right div.content {
+    width: 100%; max-width: 100%; padding: calc(var(--page-gap) * 2) 0px
+  }
+  .goodship_service div.left div.content h3 {
+    font-size: 2rem
+  }
+  .goodship_service div.right div.content h4 {
+    font-size: 2rem
+  }
+  .goodship_numbers div.box div.item {
+    width: 40%
+  }
+  .goodship_numbers div.box div.item div.count {
+    font-size: 2.4rem
+  }
+  .goodship_goal div.box div.goal em {
+    font-size: 3.6rem
+  }
+  .goodship_contactus_detail div.box {
+    display: block
+  }
+  .goodship_contactus_detail div.box div.info {
+    width: 100%; border-right: 0px; border-bottom: #eeeeee 1px solid
+  }
+  .goodship_contactus_detail div.title h1 {
+    font-size: 2rem
+  }
+  .goodship_contactus_detail div.title h2 {
+    font-size: 1.2rem
+  }
+}
